@@ -26,3 +26,9 @@ Route::get('/multiply/{n1}/{n2}', 'MyController@multiply');
 
 // Passando parâmetros para o controlador
 Route::get('/names/{id}', 'MyController@getNameByID');
+
+// Acessando todos os metodos do controle
+Route::resource('/client', 'ClientController');
+
+// Acessando um metodo específico
+Route::post('/client/requisit', 'ClientController@requisit');
