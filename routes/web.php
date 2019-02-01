@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Chamando um controle pela rota
+Route::get('/name', 'MyController@getName');
